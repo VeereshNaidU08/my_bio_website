@@ -1,0 +1,313 @@
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+@font-face {
+    font-family: fontfamily;
+    src: url(/ThinDesign.otf);
+}
+
+#top-container {
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: start; */
+    flex-direction: column;
+    float: left;
+    background-color: rgba(169, 169, 169, 0.355);
+}
+
+.top1 img {
+    width: 40px;
+    height: 40px;
+    margin: 6px 14px 470px 9px;
+}
+
+.top2 {
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: center; */
+    flex-direction: column;
+}
+
+.top2 img {
+    margin: 16px 14px 0px 17px;
+    width: 25px;
+    height: 25px;
+}
+
+#navbar-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(0, 255, 98, 0.154);
+
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin: 14px 5px;
+
+}
+
+.navbar ul a {
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+    padding: 8px 9px;
+}
+
+.navbar ul a:hover {
+    color: red;
+    background-color: rgba(245, 245, 245, 0.753);
+    border-radius: 4px;
+}
+
+
+.navbar-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-button button {
+    margin: 7px;
+    padding: 3px 8px;
+    color: red;
+    border-radius: 6px;
+}
+
+.navbar-button button a {
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+}
+
+.navbar-button div {
+    margin: 8px;
+    /* padding: 4px 7px; */
+}
+
+#heading-container {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    margin-top: 10%;
+    margin-left: 25%;
+
+
+}
+
+
+
+.heading {
+    margin: 7px 12px;
+    font-weight: bold;
+    font-size: 35px;
+    font-family: fontfamily;
+    background: linear-gradient(to right, blue, red);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+
+}
+
+#heading-container button {
+    padding: 6px;
+    /* margin: 25px 0px 12px 11px; */
+    background-color: rgba(149, 48, 48, 0.796);
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+
+}
+
+#heading-container button a {
+    text-decoration: none;
+    color: white;
+    padding: 6px 6px;
+    margin: 25px 0px 12px 0px;
+    border: none;
+
+
+
+}
+
+#heading-container::before {
+    content: "";
+    position: absolute;
+    background: url("/images/Untitled\ design9108.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 80%;
+    height: 100%;
+    top: 30px;
+    z-index: -1;
+    opacity: 0.90;
+
+
+}
+
+/* @media only screen and (max-device-width:600px) and (min-device-width:400px;)  */
+
+@media only screen and (max-width: 400px)
+
+{
+    body {
+        width: max-content;
+        min-height: max-content;
+    }
+
+    /*top container*/
+
+    #top-container {
+        display: flex;
+        background-color: unset;
+    }
+
+    .top1 img {
+        width: 25px;
+        height: 25px;
+        margin: 9px 6px 65px 6px;
+
+    }
+
+    .top2 {
+        display: flex;
+        /* align-items: center; */
+        /* justify-content: center; */
+        flex-direction: column;
+    }
+
+    .top2 img {
+        width: 15px;
+        height: 15px;
+
+    }
+
+
+    /* navbar-container */
+
+    #navbar-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: rgb(0, 255, 98);
+        /* background-color: rgba(0, 255, 98, 0.154); */
+
+    }
+
+    .navbar ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+        color: black;
+        background-color: pink;
+    }
+
+    .navbar-button div {
+        margin: 8px;
+        padding: 4px 7px;
+    }
+
+    .heading {
+        display: flexbox;
+        margin: 7px 9px;
+        font-weight: bold;
+        /* font-size: 15px; */
+        font-family: fontfamily;
+    }
+
+
+
+
+
+    #heading-container {
+        display: inline-block;
+        margin-top: 85%;
+        margin-left: 25%;
+        /* background-color: red; */
+
+
+    }
+
+    #heading-container::before {
+        content: "";
+        position: absolute;
+        background: url("/images/mainveerpics-removebg-preview\ \(1\).png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 175%;    
+        height: 145pc;
+        top:15%;
+        left: 7rem;
+        z-index: -1;
+        opacity: 0.90;
+        /* background-color: black; */
+        /* clear: both; */
+        /* display: ; */
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /*   #heading-container::before {
+            content: "";
+            content: "";
+            position: absolute;
+            background: url("/images/Untitled\ design9108.png");
+            background-repeat: no-repeat;
+            background-size: contain;
+            max-width: 100% ;
+            height: auto;
+            top: 5px;
+            z-index: -1;
+            opacity: 0.90;
+            clear: both; 
+        }
+        .heading {
+            margin: 2px 5px;
+            font-size: smaller;
+            font-family: fontfamily;
+        }
+        .navbar ul li a {
+            font-weight: small;
+            color: black;
+            text-decoration: none;
+            padding: 3px 5px;
+            font-size: x-small;
+
+        }
+        .navbar-button div {
+            margin: 3px;
+            padding: 2px;
+        }
+        #navbar-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgba(0, 255, 98, 0.154);
+            background-size: 100%;
+        } */
+}
